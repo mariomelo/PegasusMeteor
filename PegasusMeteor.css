@@ -957,3 +957,8 @@ input,textarea,.search-query,.uneditable-input,.input-append input,.input-append
 .show{display:block;}
 .invisible{visibility:hidden;}
 .affix{position:fixed;}
+
+
+.editing{background-color: green}
+textarea, input{width: 90%;}
+.ProjectTile{background-color: #ad1d28;}

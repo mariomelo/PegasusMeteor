@@ -1,0 +1,15 @@
+<template name="Projects">
+   <div class="createNewProject span12 alert">
+    <h1>Crie um novo projeto clicando aqui</h1>
+   </div>
+   {{#each AllProjects}}
+      <div class="ProjectTile span4 alert alert-info">
+          <h2 class="ProjectView view">Projeto: {{name}}</h2>
+          <input value="{{name}}" name="name" class="ProjectEdit hide edit"></input>
+          <address class="ProjectView detail hide">
+            {{details}}
+          </address>
+          <input type="textarea" value="{{details}}" name="details" class="ProjectEdit hide edit"></input>
+      </div>
+   {{/each}}
+</template>

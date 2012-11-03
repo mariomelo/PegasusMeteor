@@ -1,7 +1,3 @@
 kickOffData = ->
   Projects.remove {}
-  contador = 0
-
-  while contador < 11
-    Projects.insert name: "Projeto " + contador
-    contador++
+  Projects.insert name: "Projeto Inicial", details: 'Projeto criado com o intuito de testar o uso do meteor em conjunto com jQuery'

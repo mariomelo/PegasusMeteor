@@ -1,0 +1,16 @@
+<template name="Projects">
+   <div class="createNewProject btn btn-reverse" style="width: 100%">
+    <h1>Crie um novo projeto clicando aqui</h1>
+   </div>
+   <br/><br/><br/><br/>
+   {{#each AllProjects}}
+      <div class="ProjectTile span4 alert alert-info">
+          <h2 class="ProjectView view">{{name}}</h2>
+          <input value="{{name}}" name="name" class="ProjectEdit hide edit"></input>
+          <address class="ProjectView detail hide">
+            {{details}}
+          </address>
+          <textarea name="details" rows="5" class="ProjectEdit hide edit">{{details}}</textarea>
+      </div>
+   {{/each}}
+</template>
